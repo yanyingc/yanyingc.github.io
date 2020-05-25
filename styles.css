@@ -95,8 +95,7 @@ dd.clear {
 nav {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  /* margin: 14px 0 0 0; */
+  transform: translate(-50%, 14px);
   width: fit-content;
 }
 
