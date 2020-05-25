@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Yan-Ying Chen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" />
   </head>
@@ -15,8 +16,9 @@
 
       <div id="contact-info" class="vcard">
         <h1 class="fn">Yan-Ying Chen</h1>
-        <p>
-          Contact: <b>yanying</b> <span>﹫</span> <b>gmail</b> <span>●</span> <b>com</b>
+        <p class="email">
+          Contact: <br>
+          <b>yanying</b> <span>﹫</span> <b>gmail</b> <span>●</span> <b>com</b>
         </p>
       </div>
 
@@ -56,16 +58,26 @@
       <div id="Home" class="tabcontent">
         <dl>
           <dd class="clear"></dd>
+          <dt>Experiences</dt>
+          <dd>
+            <h3>Senior Research Scientist at FXPAL</h3>
+            <p>
+              National Taiwan University, Taiwan
+            </p>
+          </dd>
+
+          <dd class="clear"></dd>
+
           <dt>Education</dt>
           <dd>
-            <h2>Ph.D. in Computer Science</h2>
+            <h3>Ph.D. in Computer Science</h3>
             <p>
               National Taiwan University, Taiwan<br />
               Advisor:
               <a href="https://winstonhsu.info/">Prof. Winston H. Hsu</a> and <a href="https://www.iis.sinica.edu.tw/pages/liao/">Dr. Mark Liao</a>
             </p>
             
-            <h2>M.S. in Computer Science</h2>
+            <h3>M.S. in Computer Science</h3>
             <p>
               National Tsing-Hua University, Taiwan<br />
               Advisor:
@@ -74,7 +86,7 @@
               >
             </p>
 
-            <h2>B.S. in Computer Science</h2>
+            <h3>B.S. in Computer Science</h3>
             <p>
               National Chung-Cheng University, Taiwan
             </p>
@@ -84,7 +96,7 @@
 
           <dt>News</dt>
           <dd>
-            <h2>2019</h2>
+            <h3>2019</h3>
             <p>
               A co-authored paper about medical image report generation is accepted
               by BMVC 2019.
@@ -97,7 +109,7 @@
               A co-authored paper about knowledge tracing is accepted
               by WWW 2019.
             </p>
-            <h2>2018</h2>
+            <h3>2018</h3>
             <p>
 	      A co-authored paper about summarization for online conversations is accepted by EMNLP 2018
             </p>
@@ -109,6 +121,7 @@
               A co-authored paper about image localization is accepted by ICRA
               2018.
             </p>
+            <footer onclick="document.body.scrollIntoView({behavior:'smooth',block:'start'})">Back to top</footer>
           </dd>
         </dl>
       </div>
@@ -140,7 +153,7 @@
         >
         and <a href="https://dblp.uni-trier.de/pers/hd/c/Chen:Yan=Ying">DBLP</a> in more details. ☺
         <p></p>
-        <h3>Selected Publication</h3>
+        <h2>Selected Publications</h2>
         <p class="pub">
           "Addressing Data Bias Problems for Chest X-ray Image Report Generation,"
           Philipp Harzig, Yan-Ying Chen, Francine Chen, Rainer Lienhart, BMVC 2019
@@ -321,11 +334,12 @@
           Lime Iida, Winston Hsu, ACM Multimedia 2011.
           [First Prize in ACM Multimedia Grand Challenge 2011]
         </p>
+        <footer onclick="document.body.scrollIntoView({behavior:'smooth'})">Back to top</footer>
       </div>
 
       <div id="Award" class="tabcontent">
         <dd class="clear"></dd>
-        <h3>Award</h3>
+        <h2>Award</h2>
         <p class="pub">Final List of Best Paper Award in IEEE ICME 2017</p>
         <p class="pub">Multimodal Award in ACM Multimedia Grand Challenge 2014</p>
         <p class="pub">IICM Ph.D. Dissertation Award, 2014</p>
@@ -355,22 +369,24 @@
     </div>
   </body>
   <script>
-    function openPage(pageName, elmnt, color) {
-      var i, tabcontent, tablinks
+    function openPage(pageName, el, color) {
+      var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName('tabcontent')
       for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.opacity = 0
-        tabcontent[i].style.visibility = 'hidden'
+        tabcontent[i].style.opacity = 0;
+        tabcontent[i].style.visibility = 'hidden';
+        tabcontent[i].style.height = '100px';
       }
       tablinks = document.getElementsByClassName('tablink')
       for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = '#b9b9b9'
+        tablinks[i].style.backgroundColor = '#b9b9b9';
       }
       document.getElementById(pageName).style.opacity = 1;
-      document.getElementById(pageName).style.visibility = 'visible'
-      elmnt.style.backgroundColor = '#009688'
-      elmnt.style.color = 'white'
+      document.getElementById(pageName).style.visibility = 'visible';
+      document.getElementById(pageName).style.height = 'fit-content';
+      el.style.backgroundColor = '#009688';
+      el.style.color = 'white';
     }
-    document.getElementById('defaultOpen').click()
+    document.getElementById('defaultOpen').click();
   </script>
 </html>

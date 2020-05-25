@@ -5,6 +5,16 @@
 body {
   font: 16px 'Lato', Helvetica, Sans-Serif;
   line-height: 24px;
+  width:100vw;
+  height: 100vh;
+  position: relative;
+}
+footer{
+  height:100px;
+  bottom: 0;
+  text-align: center;
+  color: #009688;
+  cursor: pointer;
 }
 .clear {
   clear: both;
@@ -25,7 +35,7 @@ h1 {
 }
 h2 {
   font-size: 20px;
-  margin: 0 0 6px 0;
+  margin: 0 0 12px 0;
   position: relative;
 }
 h2 span {
@@ -40,7 +50,7 @@ h2 span {
 }
 h3 {
   font-size: 16px;
-  margin: 6px 0 6px 0;
+  margin: 0px 0 6px 0;
   position: relative;
 }
 
@@ -82,13 +92,13 @@ dt {
   font-size: 18px;
   text-align: right;
   padding: 0 26px 0 0;
-  width: 80px;
+  width: 90px;
   float: left;
   height: 100px;
   border-right: 1px solid #999;
 }
 dd {
-  width: 660px;
+  width: 640px;
   float: right;
   padding: 0 0 0 25px;
 }
@@ -137,6 +147,7 @@ button {
   /* margin: 20px 0 0 0; */
   position: absolute;
   transition: 0.15s ease-in-out;
+  overflow: hidden;
 }
 #pic {
   position: relative;
@@ -207,4 +218,71 @@ button {
 }
 .pub journal {
   font-style: italic;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #page-wrap {
+    width: 90vw;
+    padding: 20px 5vw;
+    margin: 0px auto 60px;
+    position: relative;
+  }
+
+  #pic{
+    margin: -10px 0 0 0;
+  }
+  #pic img{
+    width: 25vw;
+    height: auto;
+  }
+
+  .vcard .email{
+    font-size: 1rem;
+  }
+
+  .vcard h1{
+    font-size: 1.9rem;
+  }
+
+  #objective{
+    width: 100%;
+    float:none;
+  }
+
+  .tablink{
+    padding: 8px 8px;
+    font-size: 14px;
+    min-width: auto;
+  }
+
+  .tabcontent{
+    width:90vw;
+    overflow: hidden;
+  }
+  .tabcontent dl{
+    display: inline-block;
+    text-align: left;
+  }
+  .tabcontent dt{
+    height:fit-content;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: left;
+    margin: 0 0 0 0;
+  }
+
+  .tabcontent dd{
+    margin:0;
+    padding:0;
+    width:90vw;
+  }
+  .tabcontent dd h3{
+    margin: 4px 0;
+  }
+
+  .pub{
+    font-size: 0.9rem;
+  }
+
 }
