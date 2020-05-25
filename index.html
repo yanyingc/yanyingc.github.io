@@ -1,120 +1,383 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Yan-Ying Chen</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
 
-<head>
-     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-     <title>One Page Resume</title>
-
-     <style type="text/css">
-        * { margin: 0; padding: 0; }
-        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
-        .clear { clear: both; }
-        #page-wrap { width: 800px; margin: 40px auto 60px; }
-        #pic { float: right; margin: -30px 0 0 0; }
-        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
-        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
-        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
-        p { margin: 0 0 16px 0; }
-        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
-        a:hover { border-bottom-style: solid; color: black; }
-        ul { margin: 0 0 32px 17px; }
-        #objective { width: 500px; float: left; }
-        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
-        dd { width: 600px; float: right; }
-        dd.clear { float: none; margin: 0; height: 15px; }
-     </style>
-</head>
-
-<body>
-
+  <body>
     <div id="page-wrap">
-    
-        <img src="images/cthulu.png" alt="Photo of Cthulu" id="pic" />
-    
-        <div id="contact-info" class="vcard">
-        
-            <!-- Microformats! -->
-        
-            <h1 class="fn">C'thulhu</h1>
-        
-            <p>
-                Cell: <span class="tel">555-666-7777</span><br />
-                Email: <a class="email" href="mailto:greatoldone@lovecraft.com">greatoldone@lovecraft.com</a>
-            </p>
-        </div>
-                
-        <div id="objective">
-            <p>
-                I am an outgoing and energetic (ask anybody) young professional, seeking a 
-                career that fits my professional skills, personality, and murderous tendencies. 
-                My squid-like head is a masterful problem solver and inspires fear in who gaze upon it. 
-                I can bring world domination to your organization. 
-            </p>
-        </div>
-        
-        <div class="clear"></div>
-        
+      <figure id="pic">
+        <img src="images/profile-photo.jpg" alt="Photo of Yan-Ying Chen" />
+      </figure>
+
+      <div id="contact-info" class="vcard">
+        <h1 class="fn">Yan-Ying Chen</h1>
+        <p>
+          Email: yanying at gmail.com
+        </p>
+      </div>
+
+      <div id="objective">
+        <p>
+          My interest lies at the intersection of computer vision, natural
+          language processing and applied machine learning. I have worked on
+          image/video captioning, customer/location profiling, image
+          localization and recently focus on leveraging vision and language
+          technologies for medical image report generation.
+        </p>
+      </div>
+
+      <div class="clear"></div>
+      <nav>
+        <button
+          class="tablink"
+          onclick="openPage('Home', this)"
+          id="defaultOpen"
+        >
+          Home
+        </button>
+        <button class="tablink" onclick="openPage('Research', this)">
+          Reasearch
+        </button>
+        <button class="tablink" onclick="openPage('Publication', this)">
+          Publication
+        </button>
+        <button class="tablink" onclick="openPage('Award', this)">
+          Award
+        </button>
+      </nav>
+
+      <div class="clear"></div>
+      <div id="Home" class="tabcontent">
         <dl>
-            <dd class="clear"></dd>
-            
-            <dt>Education</dt>
-            <dd>
-                <h2>Withering Madness University - Planet Vhoorl</h2>
-                <p><strong>Major:</strong> Public Relations<br />
-                   <strong>Minor:</strong> Scale Tending</p>
-            </dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>Skills</dt>
-            <dd>
-                <h2>Office skills</h2>
-                <p>Office and records management, database administration, event organization, customer support, travel coordination</p>
-                
-                <h2>Computer skills</h2>
-                <p>Microsoft productivity software (Word, Excel, etc), Adobe Creative Suite, Windows</p>
-            </dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>Experience</dt>
-            <dd>
-                <h2>Doomsday Cult <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span></h2>
-                <ul>
-                    <li>Inspired and won highest peasant death competition among servants</li>
-                    <li>Helped coordinate managers to grow cult following</li>
-                    <li>Provided untimely deaths to all who opposed</li>
-                </ul>
-                
-                <h2>The Watering Hole <span>Bartender/Server - Milwaukee, WI - 2009</span></h2>
-                <ul>
-                    <li>Worked on grass-roots promotional campaigns</li>
-                    <li>Reduced theft and property damage percentages</li>
-                    <li>Janitorial work, Laundry</li>
-                </ul> 
-            </dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>Hobbies</dt>
-            <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>References</dt>
-            <dd>Available on request</dd>
-            
-            <dd class="clear"></dd>
+          <dd class="clear"></dd>
+          <dt>Education</dt>
+          <dd>
+            <div class="date">09/2009 – 06/2014</div>
+            <h2>Ph.D. in Computer Science</h2>
+            <p>
+              National Taiwan University, Taiwan<br />
+              Advisor:
+              <a href="https://winstonhsu.info/">Prof. Winston H. Hsu</a>
+            </p>
+
+            <div class="date">01/2003 – 07/2004</div>
+            <h2>M.S. in Computer Science</h2>
+            <p>
+              National Tsing-Hua University, Taiwan<br />
+              Advisor:
+              <a href="https://ieeexplore.ieee.org/author/37270079400"
+                >Prof. Shang-Hong Lai</a
+              >
+            </p>
+
+            <div class="date">09/1999 – 01/2003</div>
+            <h2>B.S. in Computer Science</h2>
+            <p>
+              National Chung-Cheng University, Taiwan
+            </p>
+          </dd>
+
+          <dd class="clear"></dd>
+
+          <dt>News</dt>
+          <dd>
+            <h2>2018</h2>
+            <p>
+              A co-authored paper about conversation disentanglement is accepted
+              by NAACL 2018.
+            </p>
+            <p>
+              A co-authored paper about image localization is accepted by ICRA
+              2018.
+            </p>
+            <h2>2017</h2>
+            <p>
+              A co-authored paper about video summarization and captioning is
+              accepted by BMVC 2017.
+            </p>
+            <p>
+              A co-authored paper about purchase behavior analysis is accepted
+              by EACL 2017.
+            </p>
+            <p>
+              A co-authored paper about visiting behavior analysis is accepted
+              by IEEE ICME 2017.
+            </p>
+            <h2>2016</h2>
+            <p>
+              A co-authored paper about image captioning in social media is
+              accepted by IEEE ICME 2016.
+            </p>
+            <h2>2015</h2>
+            <p>
+              A co-authored paper about business venue recognition is accepted
+              by AAAI 2016.
+            </p>
+            <p>
+              A co-authored paper about user profiling is accepted by ACM
+              Multimedia Workshop (Multimedia Commons) 2015.
+            </p>
+            <p>
+              A co-authored paper about human identification is accepted by
+              ICASSP 2015.
+            </p>
+            <p>
+              A co-authored paper about name attribute association is accepted
+              by AAAI 2015.
+            </p>
+            <p>
+              A co-authored paper about automatic image commenting is accepted
+              by IEEE Transactions on Affective Computing.
+            </p>
+          </dd>
         </dl>
-        
-        <div class="clear"></div>
-    
+      </div>
+
+      <div id="Research" class="tabcontent">
+        <h3>Research</h3>
+        <p>Some news this fine day!</p>
+      </div>
+
+      <div id="Publication" class="tabcontent">
+        See
+        <a href="https://scholar.google.com/citations?user=NkgWfBQAAAAJ&hl=en"
+          >Google Scholar</a
+        >
+        and <a href="https://dblp.uni-trier.de/pers/hd/c/Chen:Yan=Ying">DBLP</a>
+        <h3>Conference Papers</h3>
+        <p class="pub">
+          "Video to Text Summary: Joint Video Summarization and Captioning with
+          Recurrent Neural Networks," Sirius Chen, Yan-Ying Chen, Francine Chen,
+          BMVC 2017.
+        </p>
+        <p class="pub">
+          "Image-Based User Profiling of Frequent and Regular Venue Categories,"
+          Ryosuke Shigenaka, Yan-Ying Chen, Francine Chen, Dhiraj Joshi,
+          Yukihiro Tsuboshita, IEEE ICME 2017.
+        </p>
+        <p class="pub">
+          "Ranking Convolutional Recurrent Neural Networks for Purchase Stage
+          Identification on Imbalanced Twitter Data," Heike Adel, Francine Chen,
+          Yan-Ying Chen, EACL 2017.
+        </p>
+        <p class="pub">
+          "Recurrent Neural Networks for Customer Purchase Prediction on
+          Twitter," Mandy Korpusik, Shigeyuki Sakaki, Francine Chen, Yan-Ying
+          Chen, Workshop at RecSys 2016.
+        </p>
+        <p class="pub">
+          "Using Business-Aware Latent Topics For Image Captioning In Social
+          Media," Yan-Ying Chen, Francine Chen, Matthew Cooper and Dhiraj Joshi,
+          IEEE ICME 2016. (FULL paper)
+        </p>
+        <p class="pub">
+          "Business-Aware Visual Concept Discovery from Social Media for
+          Multimodal Business Venue Recognition," Bor-Chun Chen, Yan-Ying Chen,
+          Francine Chen, Dhiraj Joshi, AAAI 2016. (FULL paper)
+        </p>
+        <p class="pub">
+          "Corpus for Customer Purchase Behavior Prediction in Social Media,"
+          Shigeyuki Sakaki, Francine Chen, Mandy Korpusik and Yan-Ying Chen,
+          LREC 2016.
+        </p>
+        <p class="pub">
+          "Visually Interpreting Names as Demographic Attributes by Exploiting
+          Click-Through Data," Yan-Ying Chen, Yin-Hsi Kuo, Chun-Che Wu, Winston
+          H. Hsu, AAAI 2015. (FULL paper)
+        </p>
+        <p class="pub">
+          "Identify Visual Human Signature in Community via Wearable Camera,"
+          Chia-Chin Tsao, Yan-Ying Chen, Yu-Lin Hou, Winston H. Hsu, ICASSP
+          2015.
+        </p>
+        <p class="pub">
+          "Building User Profiles from Shared Photos," Dhiraj Joshi, Matthew
+          Cooper, Francine Chen, Yan-Ying Chen, ACM Multimedia Workshop
+          (Multimedia Commons) 2015.
+        </p>
+        <p class="pub">
+          "Predicting Viewer Affective Comments Based on Image Content in Social
+          Media," Yan-Ying Chen, Tao Chen, Winston H. Hsu, Hong-Yuan Mark Liao,
+          Shih-Fu Chang, ACM ICMR 2014. (FULL paper)
+        </p>
+        <p class="pub">
+          "Object-Based Visual Sentiment Concept Analysis and Application," Tao
+          Chen, Felix X. Yu, Jiawei Chen, Yin Cui, Yan-Ying Chen, Shih-Fu Chang,
+          ACM Multimedia 2014. (FULL paper)
+        </p>
+        <p class="pub">
+          "Discovering the City by Mining Diverse and Multimodal Data Streams,"
+          Yin-Hsi Kuo, Yan-Ying Chen, Bor-Chun Chen, Wen-Yu Lee, Chun-Che Wu,
+          Chia-Hung Lin, Yu-Lin Hou, Wen-Feng Cheng, Yi-Chih Tsai, Chung-Yen
+          Hung, Liang-Chi Hsieh, Winston Hsu, ACM Multimedia 2014. (Grand
+          Challenge Finalist)
+        </p>
+        <p class="pub">
+          "Facial Attribute Space Compression by Latent Human Topic Discovery,"
+          Chia-Hung Lin, Yan-Ying Chen, Bor-Chun Chen, Yu-Lin Hou, Winston H.
+          Hsu, ACM Multimedia 2014. (short paper)
+        </p>
+        <p class="pub">
+          "Automatic Facial Image Annotation and Retrieval by Integrating Voice
+          Label and Visual Appearance," Hong-Wun Jheng, Bor-Chun Chen, Yan-Ying
+          Chen, Winston H. Hsu, ACM Multimedia 2014. (short paper)
+        </p>
+        <p class="pub">
+          "Enabling Low Bitrate Mobile Visual Recognition - A Performance versus
+          Bandwidth Evaluation," Yu-Chuan Su, Tzu-Hsuan Chiu, Yan-Ying Chen,
+          Chun-Yen Yeh, Winston H. Hsu, ACM Multimedia 2013. (FULL paper)
+        </p>
+        <p class="pub">
+          "Search-Based Relevance Association with Auxiliary Contextual Cues,"
+          Chun-Che Wu, Kuan-Yu Chu, Yin-Hsi Kuo, Yan-Ying Chen, Wen-Yu Lee,
+          Winston H. Hsu, ACM Multimedia 2013. (Grand Challenge Multimodal
+          Award)
+        </p>
+        <p class="pub">
+          "Discovering Informative Social Subgraphs and Predicting Pairwise
+          Relationships from Group Photos," Yan-Ying Chen, Winston H. Hsu,
+          Hong-Yuan Mark Liao, ACM Multimedia 2012.
+          <a href="paper/fp060-chen.pdf"><font color="blue">[PDF]</font></a>
+          <a href="socialrelation.html"><font color="blue">[Project]</font></a
+          >(FULL paper)
+        </p>
+        <p class="pub">
+          "People Search and Activity Mining in Large-Scale
+          Community-Contributed Photos," Yan-Ying Chen, Winston H. Hsu,
+          Hong-Yuan Mark Liao, ACM Multimedia 2012.
+          <a href="paper/dsp006-chen.pdf"><font color="blue">[PDF]</font></a>
+          (doctoral symposium ORAL) [Doctoral Symposium Best Paper Award]
+        </p>
+        <p class="pub">
+          "Where is Who: Large-Scale Photo Retrieval by Facial Attributes and
+          Canvas Layout," Yu-Heng Lei, Yan-Ying Chen, Bor-Chun Chen, Lime Iida,
+          Winston Hsu, ACM SIGIR 2012.
+          <a href="paper/lei12where.pdf"><font color="blue">[PDF]</font></a>
+          (FULL paper)
+        </p>
+        <p class="pub">
+          "Personalized Travel Recommendation by Mining People Attributes from
+          Community-Contributed Photos," An-Jung Cheng, Yan-Ying Chen, Yen-Ta
+          Huang, Winston H. Hsu, Hong-Yuan Mark Liao, ACM Multimedia 2011.
+          <a href="paper/mfp16c-cheng.pdf"><font color="blue">[PDF]</font></a>
+          (FULL paper)
+        </p>
+        <p class="pub">
+          "Semi-Supervised Face Image Retrieval Using Sparse Coding with
+          Identity Constraint," Bor-Chun Chen, Yin-His Kuo, Yan-Ying Chen,
+          Kuan-Yu Chu, Winston H. Hsu, ACM Multimedia 2011.
+          <a href="paper/msp022-chen.pdf"><font color="blue">[PDF]</font></a>
+          (short paper)
+        </p>
+        <p class="pub">
+          "Photo Search by Face Positions and Facial Attributes on Touch
+          Devices," Yu-Heng Lei, Yan-Ying Chen, Bor-Chun Chen, Hsiao-Hang Su,
+          Lime Iida, Winston Hsu, ACM Multimedia 2011.
+          <a href="paper/p651-lei.pdf"><font color="blue">[PDF]</font></a>
+          (Grand Challenge) [First Prize in ACM Multimedia Grand Challenge 2011]
+        </p>
+        <p class="pub">
+          "Learning Facial Attributes by Crowdsourcing in Social Media,"
+          Yan-Ying Chen, Winston H. Hsu, Hong-Yuan Mark Liao, WWW 2011.
+          <a href="paper/pp2100-chen.pdf"><font color="blue">[PDF]</font></a>
+          (poster) [Google Fellowship for Woman]
+        </p>
+        <p class="pub">
+          "Audio-visual information fusion for SVM-based biometric
+          verification," Yan-Ying Chen, Shang-Hong Lai , CNNA 2005.
+          <a href="paper/cnna05.pdf"><font color="blue">[PDF]</font></a>
+        </p>
+        <h3>Journal Papers</h3>
+        <p class="pub">
+          "Assistive Image Comment Robot - A Novel Mid-Level Concept-Based
+          Representation," Yan-Ying Chen, Tao Chen, Taikun Liu, Hong-Yuan Mark
+          Liao, Shih-Fu Chang, IEEE Transactions on Affective Computing. 2015
+        </p>
+        <p class="pub">
+          "Travel Recommendation by Mining People Attributes and Travel Group
+          Types from Community-Contributed Photos," Yan-Ying Chen, An-Jung
+          Cheng, Winston H. Hsu, IEEE Transactions on Multimedia, 2013.
+          <a href="paper/chen13travel.pdf"><font color="blue">[PDF]</font></a>
+        </p>
+        <p class="pub">
+          "Automatic Training Image Acquisition and Effective Feature Selection
+          from Community-Contributed Photos for Facial Attribute Detection,"
+          Yan-Ying Chen, Winston H. Hsu, Hong-Yuan Mark Liao, IEEE Transactions
+          on Multimedia, 2013.
+          <a href="paper/chen12automatic.pdf"
+            ><font color="blue">[PDF]</font></a
+          >
+        </p>
+        <p class="pub">
+          "Scalable Face Track Retrieval in Video Archives using Bag-of-Faces
+          Sparse Representation," Bor-Chun Chen, Yan-Ying Chen, Yin-Hsi Kuo,
+          Thanh Duc Ngo, Duy-Dinh Le, Shin'ichi Satoh, Winston H. Hsu, IEEE
+          Transactions on Circuits and Systems for Video Technology, 2013.
+          (accepted)
+        </p>
+        <p class="pub">
+          "Scalable Face Image Retrieval using Attribute-Enhanced Sparse
+          Codewords," Bor-Chun Chen, Yan-Ying Chen, Yin-Hsi Kuo, Winston H. Hsu,
+          IEEE Transactions on Multimedia, 2013.
+          <a href="paper/chen12scalable.pdf"><font color="blue">[PDF]</font></a>
+        </p>
+        <p class="pub">
+          "Learning by Expansion: Exploiting Social Media for Image
+          Classification with Few Training Examples," Sheng-Yuan Wang, Wei-Shing
+          Liao, Liang-Chi Hsieh, Yan-Ying Chen, Winston H. Hsu, Neurocomputing,
+          2012.
+          <a href="paper/wang12learning.pdf"><font color="blue">[PDF]</font></a>
+        </p>
+      </div>
+
+      <div id="Award" class="tabcontent">
+        <h3>Award</h3>
+        <p class="pub">Final List of Best Paper Award in IEEE ICME 2017</p>
+        <p class="pub">Multimodal Award in ACM Multimedia Grand Challenge 2014</p>
+        <p class="pub">IICM Ph.D. Dissertation Award, 2014</p>
+        <p class="pub">TAAI Ph.D. Dissertation Award, 2014</p>
+        <p class="pub">
+          First Place in Microsoft Research - Bing Image Retrieval Challenge
+          2013
+        </p>
+        <p class="pub">Multimodal Award in ACM Multimedia Grand Challenge 2013</p>
+        <p class="pub">2012 ACM Multimedia Doctoral Symposium Best Paper Award</p>
+        <p class="pub">WWW 2011 Google Fellowship for Women</p>
+        <p class="pub">First Prize in ACM Multimedia Grand Challenge 2011</p>
+        <p class="pub">
+          2013 Study Abroad Program sponsored by National Science Council,
+          Taiwan
+        </p>
+        <p class="pub">
+          2012 Summer Visit Program to Japan sponsored by Interchange
+          Association, Japan
+        </p>
+        <p class="pub">2nd Prize in Chunghwa Telecom Innovation Awards 2011</p>
+        <p class="pub">
+          2011 Outstanding Students Conference Travel Grant from Foundation for
+          the Advancement of Outstanding Scholarship
+        </p>
+      </div>
     </div>
-
-</body>
-
+  </body>
+  <script>
+    function openPage(pageName, elmnt, color) {
+      var i, tabcontent, tablinks
+      tabcontent = document.getElementsByClassName('tabcontent')
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = 'none'
+      }
+      tablinks = document.getElementsByClassName('tablink')
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = '#b9b9b9'
+      }
+      document.getElementById(pageName).style.display = 'block'
+      elmnt.style.backgroundColor = '#009688'
+      elmnt.style.color = 'white'
+    }
+    document.getElementById('defaultOpen').click()
+  </script>
 </html>
