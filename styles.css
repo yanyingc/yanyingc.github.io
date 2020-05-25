@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  font: 16px Helvetica, Sans-Serif;
+  font: 16px 'Lato', Helvetica, Sans-Serif;
   line-height: 24px;
 }
 .clear {
@@ -60,14 +60,21 @@ ul {
   margin: 0 0 32px 17px;
 }
 #objective {
-  width: 500px;
+  width: 600px;
   float: left;
   margin: 10px 0 0 0;
 }
 #objective p {
-  font-family: Georgia, Serif;
-  font-style: italic;
+  font-family: 'Lato', Georgia, Serif;
   color: #666;
+  font-weight: 300;
+  font-size: 18px;
+  word-spacing: 0.07rem;
+  word-break: break-word;
+}
+#objective p span{
+  color:#009688;
+  text-shadow: 1px 1px 2px #00968833;
 }
 dt {
   font-style: italic;
@@ -75,7 +82,7 @@ dt {
   font-size: 18px;
   text-align: right;
   padding: 0 26px 0 0;
-  width: 86px;
+  width: 80px;
   float: left;
   height: 100px;
   border-right: 1px solid #999;
@@ -83,6 +90,7 @@ dt {
 dd {
   width: 660px;
   float: right;
+  padding: 0 0 0 25px;
 }
 dd.clear {
   float: none;
@@ -127,6 +135,7 @@ button {
 }
 .tabcontent {
   /* margin: 20px 0 0 0; */
+  position: absolute;
 }
 #pic {
   position: relative;

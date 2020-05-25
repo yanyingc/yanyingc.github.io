@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Yan-Ying Chen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" />
   </head>
 
@@ -14,15 +15,15 @@
 
       <div id="contact-info" class="vcard">
         <h1 class="fn">Yan-Ying Chen</h1>
-        <h4>
-          Email: yanying at gmail dot com
-        </h4>
+        <p>
+          Contact: <b>yanying</b> <span>﹫</span> <b>gmail</b> <span>●</span> <b>com</b>
+        </p>
       </div>
 
       <div id="objective">
         <p>
-          My interest lies at the intersection of computer vision, natural
-          language processing and applied machine learning. I have worked on
+          My interest lies at the intersection of <span>computer vision</span>, <span>natural
+          language processing</span> and <span>machine learning</span>. I have worked on
           image/video captioning, customer/location profiling, image
           localization and recently focus on leveraging vision and language
           technologies for medical image report generation.
@@ -48,6 +49,8 @@
           Award
         </button>
       </nav>
+
+      <div class="clear"></div>
 
 
       <div id="Home" class="tabcontent">
@@ -355,13 +358,13 @@
       var i, tabcontent, tablinks
       tabcontent = document.getElementsByClassName('tabcontent')
       for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = 'none'
+        tabcontent[i].style.visibility = 'hidden'
       }
       tablinks = document.getElementsByClassName('tablink')
       for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.backgroundColor = '#b9b9b9'
       }
-      document.getElementById(pageName).style.display = 'block'
+      document.getElementById(pageName).style.visibility = 'visible'
       elmnt.style.backgroundColor = '#009688'
       elmnt.style.color = 'white'
     }
