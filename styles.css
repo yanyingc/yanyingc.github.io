@@ -93,12 +93,13 @@ dd.clear {
   float: right;
 }
 nav {
-  position: absolute;
+  /* position: absolute;
   left: 50%;
-  transform: translate(-50%, 14px);
+  transform: translate(-50%, 14px); */
   width: fit-content;
+  height: max-content;
+  margin: 0 auto;
 }
-
 button {
   vertical-align: middle;
   overflow: hidden;
@@ -121,9 +122,10 @@ button {
   outline: 0;
   white-space: normal;
   background-color: white;
+  margin: 20px 0;
 }
 .tabcontent {
-  margin: 80px 0 0 0;
+  /* margin: 20px 0 0 0; */
 }
 #pic {
   position: relative;
