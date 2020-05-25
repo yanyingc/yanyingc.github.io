@@ -114,7 +114,7 @@
       </div>
 
       <div id="Research" class="tabcontent">
-        <div class="clear"></div>
+        <dd class="clear"></dd>
         <h2>Recent Proejects</h2>
         <h3>Medical Image Report Generation, 2018 - present, at FXPAL</h3>
         <p class="pub">
@@ -133,12 +133,13 @@
       </div>
 
       <div id="Publication" class="tabcontent">
-        <div class="clear"></div>
+        <dd class="clear"></dd>
         See
         <a href="https://scholar.google.com/citations?user=NkgWfBQAAAAJ&hl=en"
           >Google Scholar</a
         >
-        and <a href="https://dblp.uni-trier.de/pers/hd/c/Chen:Yan=Ying">DBLP</a>
+        and <a href="https://dblp.uni-trier.de/pers/hd/c/Chen:Yan=Ying">DBLP</a> in more details. ☺
+        <p></p>
         <h3>Selected Publication</h3>
         <p class="pub">
           "Addressing Data Bias Problems for Chest X-ray Image Report Generation,"
@@ -323,7 +324,7 @@
       </div>
 
       <div id="Award" class="tabcontent">
-        <div class="clear"></div>
+        <dd class="clear"></dd>
         <h3>Award</h3>
         <p class="pub">Final List of Best Paper Award in IEEE ICME 2017</p>
         <p class="pub">Multimodal Award in ACM Multimedia Grand Challenge 2014</p>
@@ -358,12 +359,14 @@
       var i, tabcontent, tablinks
       tabcontent = document.getElementsByClassName('tabcontent')
       for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.opacity = 0
         tabcontent[i].style.visibility = 'hidden'
       }
       tablinks = document.getElementsByClassName('tablink')
       for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.backgroundColor = '#b9b9b9'
       }
+      document.getElementById(pageName).style.opacity = 1;
       document.getElementById(pageName).style.visibility = 'visible'
       elmnt.style.backgroundColor = '#009688'
       elmnt.style.color = 'white'
