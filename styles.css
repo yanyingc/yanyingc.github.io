@@ -30,7 +30,8 @@ h1 {
   padding: 0 0 16px 0;
   font-size: 42px;
   font-weight: bold;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
+  word-spacing: 0.3rem;;
   border-bottom: 1px solid #999;
 }
 h2 {
