@@ -10,7 +10,7 @@ body {
   position: relative;
 }
 footer{
-  height:100px;
+  height:150px;
   bottom: 0;
   text-align: center;
   color: #009688;
@@ -156,6 +156,10 @@ button {
   border: 8px solid white;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
   line-height: 0px;
+}
+#pic img{
+  width: 12vw;
+  height: auto;
 }
 #pic::before {
   position: absolute;
